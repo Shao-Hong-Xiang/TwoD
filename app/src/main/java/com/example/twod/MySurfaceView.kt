@@ -14,6 +14,9 @@ class MySurfaceView(context: Context?, attrs: AttributeSet?) : SurfaceView(conte
     lateinit var surfaceHolder: SurfaceHolder
     lateinit var BG: Bitmap
     lateinit var SuperMan:Bitmap
+
+    var BGmoveX:Int = 0
+
     init {
         surfaceHolder = getHolder()
         BG = BitmapFactory.decodeResource(getResources(), R.drawable.back)
